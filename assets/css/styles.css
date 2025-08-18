@@ -292,29 +292,87 @@ img {
 }
 
 /*==================== SKILLS ====================*/
-.skills__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+body {
+  
+    font-family: 'Poppins', Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
-.skills__title {
-  color: var(--first-color);
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+
+.skills-section {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background: none;
+    text-align: center;
 }
-.skills__data {
-  display: grid;
-  gap: var(--mb-0-5);
+
+.skills-title {
+    color:  #7052EB;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 2em;
 }
-.skills__data span:first-child {
-  font-size: var(--normal-font-size);
-  color: var(--title-color);
-  margin-right: 1.5rem;
+
+.main-title {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
-.skills__data span:last-child {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+
+.skills-description {
+    color: #a2a9bb;
+    font-size: 1.1em;
+    margin-bottom: 35px;
 }
+
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.skills-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.skill {
+    text-align: left;
+}
+
+.skill-label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.skill-percentage {
+    float: right;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: black;
+}
+
+.progress-bar {
+    background:black;
+    border-radius: 5px;
+    height: 8px;
+    margin-top: 7px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background: #ff4d3d;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
 
 /* Bar effect (Extra enhancement, you can adjust as needed) */
 .skills__data {
